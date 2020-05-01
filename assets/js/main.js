@@ -260,7 +260,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         /* ---------------------------------------------- /*
          * Portfolio
          /* ---------------------------------------------- */
-
+/*
         var worksgrid   = $('#works-grid'),
             worksgrid_mode;
 
@@ -293,7 +293,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
             return false;
         });
-
+*/
 
         /* ---------------------------------------------- /*
          * Testimonials
@@ -348,7 +348,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         /* ---------------------------------------------- /*
          * Youtube video background
          /* ---------------------------------------------- */
-
+/*
         $(function(){
             $(".video-player").mb_YTPlayer();
         });
@@ -375,7 +375,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             return false;
         });
 
-
+*/
         /* ---------------------------------------------- /*
          * Owl Carousel
          /* ---------------------------------------------- */
@@ -412,7 +412,20 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 dotsSpeed: 400,
                 items: items,
                 navSpeed: 300,
-                autoplay: 2000
+                autoplay: 2000,
+				responsive:{
+        0:{
+            items:2
+        },
+        500:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+				}
+				
+				
             });
 
         });
@@ -421,12 +434,12 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         /* ---------------------------------------------- /*
          * Blog masonry
          /* ---------------------------------------------- */
-
+/*
         $('.post-masonry').imagesLoaded(function() {
             $('.post-masonry').masonry();
         });
 
-
+*/
         /* ---------------------------------------------- /*
          * Scroll Animation
          /* ---------------------------------------------- */
